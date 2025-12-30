@@ -28,14 +28,13 @@
 .dashboard button:hover {
   background: #0049b8;
 }
-/* ===============================
-   GLOBAL UI ENHANCEMENTS
-================================ */
+
+
 body {
   background: linear-gradient(135deg, #eef4ff, #f9fbff);
 }
 
-/* Smooth animations everywhere */
+
 * {
   transition: all 0.25s ease-in-out;
 }
@@ -255,9 +254,7 @@ button:hover {
   font-size: 13px;
 }
 
-/* ===============================
-   HOME / LOGIN PAGE IMPROVEMENT
-================================ */
+/* LOGIN PAGE */
 
 body.login-page {
   min-height: 100vh;

@@ -79,6 +79,8 @@ onAuthStateChanged(auth, (user) => {
     loadApplications();
   }
 });
+
+// Search functionality
 document.getElementById("searchInput").addEventListener("keyup", () => {
   const value = document.getElementById("searchInput").value.toLowerCase();
   const rows = document.querySelectorAll("#applicationsTable tr");

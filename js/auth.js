@@ -15,7 +15,7 @@ import {
   doc
 } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
-// ---------------- REGISTER ----------------
+// REGISTER
 document.getElementById("registerBtn").addEventListener("click", async () => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
@@ -43,7 +43,7 @@ document.getElementById("registerBtn").addEventListener("click", async () => {
 });
 
 
-// ---------------- LOGIN ----------------
+//LOGIN
 document.getElementById("loginBtn").addEventListener("click", async () => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;

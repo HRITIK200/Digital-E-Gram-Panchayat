@@ -3,6 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/fireba
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 
+//web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA0qUi0zg0IgSOuNckMI5ZNMPZIK6-cEDw",
   authDomain: "digital-e-gram-panchayat-93a6a.firebaseapp.com",

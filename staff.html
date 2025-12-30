@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff Dashboard - E Gram Panchayat</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  
+  <div class="dashboard">
+    <h2>Staff Dashboard</h2>
+    <div class="stats">
+  <div class="stat-card">
+    <h3 id="totalCount">0</h3>
+    <p>Total</p>
+  </div>
+  <div class="stat-card pending">
+    <h3 id="pendingCount">0</h3>
+    <p>Pending</p>
+  </div>
+  <div class="stat-card approved">
+    <h3 id="approvedCount">0</h3>
+    <p>Approved</p>
+  </div>
+  <div class="stat-card rejected">
+    <h3 id="rejectedCount">0</h3>
+    <p>Rejected</p>
+  </div>
+</div>
+
+    <p>Applications Received</p>
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by service or user..."
+        class="search-box"
+      />
+
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>User Email</th>
+          <th>Service Name</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="applicationsTable"></tbody>
+    </table>
+    <p id="emptyMsg" class="empty-msg">No records found</p>
+
+  </div>
+
+  <script type="module" src="js/staff.js"></script>
+</body>
+</html>

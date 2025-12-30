@@ -1,0 +1,374 @@
+.dashboard {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.dashboard h2 {
+  color: #0a6cf1;
+  margin-bottom: 10px;
+}
+
+.dashboard table {
+  margin-top: 15px;
+}
+
+.dashboard button {
+  padding: 8px 14px;
+  background: #0a6cf1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dashboard button:hover {
+  background: #0049b8;
+}
+/* ===============================
+   GLOBAL UI ENHANCEMENTS
+================================ */
+body {
+  background: linear-gradient(135deg, #eef4ff, #f9fbff);
+}
+
+/* Smooth animations everywhere */
+* {
+  transition: all 0.25s ease-in-out;
+}
+
+/*DASHBOARD CARD STYLE*/
+
+.dashboard {
+  max-width: 1100px;
+  margin: 35px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(10, 108, 241, 0.12);
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard h2 {
+  font-size: 26px;
+  color: #0a6cf1;
+  margin-bottom: 8px;
+}
+
+.dashboard p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* BUTTONS*/
+button {
+  background: linear-gradient(135deg, #0a6cf1, #0049b8);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(10,108,241,0.25);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(10,108,241,0.35);
+}
+
+/* Approve / Reject */
+button.reject {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+button.approve {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+/* TABLE STYLES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+thead {
+  background: linear-gradient(135deg, #0a6cf1, #0072d2);
+  color: #fff;
+}
+
+th {
+  padding: 14px;
+  font-size: 14px;
+  text-align: left;
+}
+
+td {
+  padding: 13px;
+  font-size: 14px;
+  border-bottom: 1px solid #eef2ff;
+}
+
+tr:hover td {
+  background: #f4f8ff;
+}
+
+/* Status Badges */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status.Pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.Approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.Rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* SERVICES LIST */
+
+#servicesList div {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+#servicesList div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+#servicesList h4 {
+  color: #0a6cf1;
+  margin-bottom: 6px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin: 20px 0 30px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  color: #0a6cf1;
+}
+
+.stat-card p {
+  color: #555;
+  margin-top: 6px;
+}
+
+.stat-card.pending { border-left: 6px solid #f1c40f; }
+.stat-card.approved { border-left: 6px solid #2ecc71; }
+.stat-card.rejected { border-left: 6px solid #e74c3c; }
+
+.search-box {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #dce6ff;
+  margin-bottom: 15px;
+}
+.empty-msg {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+  font-style: italic;
+}
+button, .stat-card, #servicesList div {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-header span {
+  color: #888;
+  font-size: 13px;
+}
+
+/* ===============================
+   HOME / LOGIN PAGE IMPROVEMENT
+================================ */
+
+body.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef4ff, #f9fbff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Portal heading */
+.portal-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portal-header h1 {
+  font-size: 34px;
+  color: #0a6cf1;
+  margin-bottom: 6px;
+}
+
+.portal-header p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Login card */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-title {
+  text-align: center;
+  color: #0a6cf1;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid #dce6ff;
+  background: #f7faff;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #0a6cf1;
+  background: #ffffff;
+}
+
+/* Buttons */
+.login-btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.login-btn-group button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #0a6cf1, #0049b8);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn-group button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(10,108,241,0.3);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .portal-header h1 {
+    font-size: 26px;
+  }
+}

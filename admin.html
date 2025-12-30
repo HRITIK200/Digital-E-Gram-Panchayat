@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - E Gram Panchayat</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  
+  <div class="dashboard">
+    <h2>Admin / Officer Dashboard</h2>
+    <div class="stats">
+  <div class="stat-card">
+    <h3 id="totalCount">0</h3>
+    <p>Total</p>
+  </div>
+  <div class="stat-card pending">
+    <h3 id="pendingCount">0</h3>
+    <p>Pending</p>
+  </div>
+  <div class="stat-card approved">
+    <h3 id="approvedCount">0</h3>
+    <p>Approved</p>
+  </div>
+  <div class="stat-card rejected">
+    <h3 id="rejectedCount">0</h3>
+    <p>Rejected</p>
+  </div>
+</div>
+
+
+    <!-- ADD SERVICE -->
+    <h3>Add New Panchayat Service</h3>
+
+    <input type="text" id="serviceName" placeholder="Service Name">
+    <textarea id="serviceDesc" placeholder="Service Description"></textarea>
+    <button id="addServiceBtn">Add Service</button>
+
+    <hr>
+
+    <!-- SERVICES LIST -->
+    <h3>Available Services</h3>
+    <ul id="servicesList"></ul>
+
+    <hr>
+
+    <!-- APPLICATIONS -->
+    <h3>All Applications</h3>
+    <input type="text"
+         id="searchInput"
+         placeholder="Search by service or user..."
+         class="search-box"
+         />
+
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>User Email</th>
+          <th>Service Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="applicationsTable"></tbody>
+    </table>
+    
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

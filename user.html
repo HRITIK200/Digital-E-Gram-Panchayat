@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+</head>
+<body>
+
+<h2>Available Services</h2>
+<ul id="services"></ul>
+
+<script type="module" src="js/user.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard - E Gram Panchayat</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  
+  <div class="dashboard">
+    <h2>User Dashboard</h2>
+    <p>Available Panchayat Services</p>
+
+    <div id="servicesList"></div>
+
+    <h3>My Applications</h3>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="applicationsList"></tbody>
+    </table>
+  </div>
+
+  <script type="module" src="js/user.js"></script>
+</body>
+</html>

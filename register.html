@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+
+<div class="login-card">
+  <h2>Register</h2>
+  <input id="emailInput" placeholder="Email">
+  <input id="passwordInput" type="password" placeholder="Password">
+
+  <select id="roleInput">
+    <option value="user">Citizen</option>
+    <option value="staff">Staff</option>
+    <option value="admin">Officer</option>
+  </select>
+
+  <button id="registerBtn">Register</button>
+</div>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/auth.js"></script>
+</body>
+</html>
